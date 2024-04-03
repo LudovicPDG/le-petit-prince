@@ -1,0 +1,21 @@
+<ion-content class="formulaire">
+  <ion-item>
+    <ion-label position="floating">Login</ion-label>
+    <ion-input type="text" [(ngModel)]="login"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Mot de passe</ion-label>
+    <ion-input type="password" [(ngModel)]="password"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-checkbox slot="start" [(ngModel)]="rememberMe"></ion-checkbox>
+    <ion-label>Se souvenir de moi</ion-label>
+  </ion-item>
+  <ion-button expand="full" (click)="connect()">Connexion</ion-button>
+  <ion-toast
+    [isOpen]="isToastOpen"
+    message="Le mot de passe ou le login est incorrect"
+    [duration]="5000"
+    (didDismiss)="setOpen(false)"
+  ></ion-toast>
+</ion-content>

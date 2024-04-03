@@ -1,0 +1,13 @@
+.quitter{
+    position: absolute;
+    bottom: 10;
+    right: 10;
+    z-index: 10;
+    background-color: #fe0000;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    box-shadow: 0 0 5px 0 rgba(67, 67, 67, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
